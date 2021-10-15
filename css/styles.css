@@ -1,0 +1,88 @@
+/* this is mobile*/
+
+body {
+  background-color: white;
+}
+
+.uzo-header {
+  background-color: #76e4eb;
+  height: 48px;
+}
+
+.container {
+  max-width: 987px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.hero-banner {
+  background-color: #315fa4;
+  height: 420px;
+  margin-bottom: 20px;
+}
+
+.call-to-action {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.column {
+  background-color: #ca1dcd;
+  height: 220px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer {
+  background-color: #c01887;
+  height: 162px;
+}
+
+/*this is desktop*/
+
+@media screen and (min-width: 767px) {
+  body {
+    background-color: white;
+  }
+
+  .uzo-header {
+    background-color: transparent;
+  }
+
+  .uzo-header .container {
+    height: 48px;
+    background-color: #76e4eb;
+  }
+
+  .hero-banner {
+    background-color: white;
+  }
+
+  .hero-banner .container {
+    height: 420px;
+    background-color: #315fa4;
+  }
+
+  .column {
+    background-color: #ca1dcd;
+    height: 220px;
+    width: 313px;
+    margin-bottom: 0;
+
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  .column:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .footer {
+    background-color: transparent;
+  }
+
+  .footer .container {
+    height: 172px;
+    background-color: #c01887;
+  }
+}
