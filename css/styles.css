@@ -10,9 +10,11 @@ body {
 }
 
 .container {
+  display: flex;
   max-width: 987px;
   background-color: transparent;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .hero-banner {
@@ -25,17 +27,25 @@ body {
   width: 100%;
   margin-bottom: 20px;
 }
-
+.call-to-action h3 {
+ margin: 0;
+  line-height:220px ;
+  text-align: center;
+  vertical-align: middle;
+}
 .column {
   background-color: #ca1dcd;
   height: 220px;
   margin-bottom: 20px;
-  display: block;
 }
 
 .footer {
   background-color: #c01887;
   height: 162px;
+}
+
+aside ul {
+  list-style: none;
 }
 
 /*this is desktop*/
@@ -63,6 +73,9 @@ body {
     background-color: #315fa4;
   }
 
+  .container {
+    flex-direction: row;
+  }
   .column {
     background-color: #ca1dcd;
     height: 220px;
@@ -70,13 +83,13 @@ body {
     margin-bottom: 0;
 
     margin-right: 20px;
-    display: inline-block;
   }
 
   .column:nth-child(3) {
     margin-right: 0;
   }
-
+  
+  }
   .footer {
     background-color: transparent;
   }
