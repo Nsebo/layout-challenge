@@ -20,6 +20,7 @@ body {
 .hero-banner {
   background-color: #315fa4;
   height: 420px;
+  position: relative;
   margin-bottom: 20px;
 }
 
@@ -28,8 +29,8 @@ body {
   margin-bottom: 20px;
 }
 .call-to-action h3 {
- margin: 0;
-  line-height:220px ;
+  margin: 0;
+  line-height: 220px;
   text-align: center;
   vertical-align: middle;
 }
@@ -88,14 +89,24 @@ aside ul {
   .column:nth-child(3) {
     margin-right: 0;
   }
-  
-  }
-  .footer {
-    background-color: transparent;
-  }
+}
+.footer {
+  background-color: transparent;
+}
 
-  .footer .container {
-    height: 172px;
-    background-color: #c01887;
-  }
+.footer .container {
+  height: 172px;
+  background-color: #c01887;
+}
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+/*.jellyfish {
+  position: absolute;
+  bottom: 0;
+  border: 3px solid black;
+}*/
+.jellyfish {
+  position: absolute;
+  bottom: 0;
 }
