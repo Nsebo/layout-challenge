@@ -1,3 +1,8 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 /* this is mobile*/
 
 body {
@@ -5,23 +10,45 @@ body {
 }
 
 .uzo-header {
-  background-color: #76e4eb;
   height: 48px;
 }
 
+.app-navigation {
+  float: right;
+}
+.sr-only {
+  display: block;
+}
+.fa-bars {
+  display: block;
+}
+
 .container {
-  display: flex;
   max-width: 987px;
   background-color: transparent;
   margin: 0 auto;
-  flex-direction: column;
+  position: relative;
 }
 
+.hero-banner .container {
+  height: 420px;
+}
+.flex-items {
+  flex-direction: column;
+  display: flex;
+}
 .hero-banner {
-  background-color: #315fa4;
   height: 420px;
   position: relative;
   margin-bottom: 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.jellyfish {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 .call-to-action {
@@ -35,7 +62,7 @@ body {
   vertical-align: middle;
 }
 .column {
-  background-color: #ca1dcd;
+  background-image: url("../images/dog.png");
   height: 220px;
   margin-bottom: 20px;
 }
@@ -43,6 +70,7 @@ body {
 .footer {
   background-color: #c01887;
   height: 162px;
+  font-family: "Open Sans";
 }
 
 aside ul {
@@ -62,23 +90,22 @@ aside ul {
 
   .uzo-header .container {
     height: 48px;
-    background-color: #76e4eb;
   }
-
-  .hero-banner {
-    background-color: white;
+  .fa-bars {
+    display: none;
   }
 
   .hero-banner .container {
     height: 420px;
-    background-color: #315fa4;
   }
 
-  .container {
+  .flex-items {
     flex-direction: row;
+    display: flex;
   }
   .column {
     background-color: #ca1dcd;
+    background-image: url("../images/dog.png");
     height: 220px;
     width: 313px;
     margin-bottom: 0;
@@ -88,25 +115,34 @@ aside ul {
 
   .column:nth-child(3) {
     margin-right: 0;
+    background-image: url("../images/butterfly.png");
+  }
+
+  .footer .container {
+    height: 172px;
+    background-color: #c01887;
+  }
+  .jellyfish {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
 }
-.footer {
-  background-color: transparent;
+* {
+  margin: 0;
+  padding: 0;
+}
+.jellyfish h2 {
+  font-size: 36px;
 }
 
-.footer .container {
-  height: 172px;
-  background-color: #c01887;
+.jellyfish p {
+  font-size: 24px;
 }
-* {
-  font-family: "Ubuntu", sans-serif;
-}
-/*.jellyfish {
-  position: absolute;
-  bottom: 0;
-  border: 3px solid black;
-}*/
-.jellyfish {
-  position: absolute;
-  bottom: 0;
+.hero-banner {
+  background-image: url("../images/jellyfish.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

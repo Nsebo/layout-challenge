@@ -4,8 +4,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Ubuntu:wght@400;500&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <meta charset="UTF-8" />
@@ -14,38 +18,54 @@
     <title>Document</title>
   </head>
   <body>
+    <nav class="app-navigation">
+      <label for="hamburger-menu">
+        <span class="sr-only">Hamburger menu</span>
+        <i class="fas fa-bars"></i>
+      </label>
+    </nav>
     <section class="uzo-header">
       <div class="container">
         <p>
-          <img src="#" alt="logo" />
+          <img src="./images/logo.png" alt="logo" width="89px" height="26px" />
         </p>
       </div>
     </section>
 
     <main>
       <section class="hero-banner">
-        <div class="container jellyfish">
-          <h2>The gracefull Jellyfish not edible,</h2>
-          <p>but beautifully all the same.</p>
+        <div class="container">
+          <div class="jellyfish">
+            <h2>The gracefull Jellyfish not edible,</h2>
+            <p>but beautifully all the same.</p>
+          </div>
         </div>
       </section>
 
       <section class="call-to-action">
         <div class="container">
-          <div class="column">
-            <h3>Dogs love the oceans</h3>
-          </div>
-          <div class="column">
-            <h3>Lizzards and gizzards</h3>
-          </div>
-          <div class="column">
-            <h3>Monarch butterflies Migrate</h3>
+          <div class="flex-items">
+            <div class="column">
+              <h3>Dogs love the oceans</h3>
+            </div>
+            <div class="column">
+              <h3>Lizzards and gizzards</h3>
+            </div>
+            <div class="column">
+              <h3>Monarch butterflies Migrate</h3>
+            </div>
           </div>
         </div>
       </section>
       <footer class="footer">
         <div class="container">
           <aside>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link
+              rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossorigin
+            />
             <p>National Geographic</p>
             <ul>
               <li>ANIMAL</li>
